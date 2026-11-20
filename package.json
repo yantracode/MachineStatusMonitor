@@ -1,0 +1,17 @@
+{
+  "name": "machine-status-monitor",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A small Express machine status dashboard",
+  "scripts": {
+    "test": "node --test",
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "express": "^5.1.0",
+    "pg": "^8.23.1",
+    "ws": "^8.23.0"
+  }
+}

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Machine Status Monitor</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <div><p class="eyebrow">SHOP FLOOR / OVERVIEW</p><h1>Machine Status Monitor</h1><p class="subtitle">Your machines, at a glance.</p></div>
+      <button id="refresh" type="button">Refresh status</button>
+    </header>
+    <div class="info"><span class="demo">Database devices</span><span id="updated" role="status">Loading machine statuses…</span></div>
+    <section id="summary" class="summary" aria-label="Status summary"></section>
+    <section class="section-heading"><h2>Machines</h2><span id="machine-count"></span></section>
+    <p id="error" role="alert" hidden></p>
+    <section id="machines" class="machines" aria-label="Machine statuses"></section>
+    <footer>Machine Status Monitor <span>Live machine_status telemetry</span></footer>
+  </main>
+</body>
+</html>
